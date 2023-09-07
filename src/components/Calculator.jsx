@@ -23,7 +23,7 @@ export default function Calculator() {
                 </div>
                 <div className="cake-usd">
                     <div className='cake-title'>
-                        <img src={cake} alt="cake image" />
+                        <img src={cake} alt="cake" />
                         <span>cake</span>
                     </div>
                     <div className="cake-select">
@@ -91,9 +91,9 @@ export default function Calculator() {
                             <div onClick={handleClicked}>
                                 {
                                     show ?
-                                        <img src={pencil2} alt="Description of the image2" />
+                                        <img src={pencil2} alt="Description of the" />
                                         :
-                                        <img src={pencil} alt="Description of the image" />
+                                        <img src={pencil} alt="Description of" />
                                 }
                             </div>
                             <input type="text" name="" value="" placeholder="100.0 USD CAKE" />
