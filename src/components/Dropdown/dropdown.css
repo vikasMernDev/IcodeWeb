@@ -1,0 +1,80 @@
+.dropdown {
+    margin: 10px;
+    padding: 10px
+}
+
+.dropdown-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-details {
+    margin-top: 10px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 14px;
+    transition: transform 0.2s;
+    margin-top: 0px;
+}
+
+.icon.up {
+    transform: rotate(-180deg);
+    margin-top: 4px;
+}
+
+.apy-rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px -20px;
+}
+
+.apy-rate h4 {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.apy-rate h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FAC200;
+    ;
+}
+
+.details-info li {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A3A3A3;
+}
+
+.details-info ul {
+    padding-left: 0px;
+    margin-top: 0px;
+}
+.cake-field img {
+    top: 19px;
+    position: absolute;
+    left: 20px;
+}
+
+.cake-field {
+    width: 100%;
+    position: relative;
+}

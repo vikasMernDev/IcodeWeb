@@ -1,36 +1,113 @@
-.main-wrap{
-    border: 1px solid;
-    width: 30%;
-    height: 60%;
+.main-wrap {
+    font-family: 'Poppins', sans-serif;
+}
+.main-wrap {
+    width: 100%;
+    max-width: 35%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px 0px #0000001c;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 30px;
-    height: 50px;
 }
 .header h4 {
     font-size: 23px;
     color: #070602;
     font-weight: 700;
+    margin: 0;
 }
 .header span{
     font-size: 18px;
     color: #222222;
 }
-.cake-field input{
-    background-color: #ECECEC;
-    width: 85%;
-    height: 35px;
+.cake-field input {
+    background-color: #F9FAFB;
+    width: 100%;
+    height: 60px;
     border-radius: 6px;
-    border: none;
+    border: 1px solid #ECECEC;
+    text-align: right;
+    padding: 0 15px;
 }
 
 .cake-usd {
     display: flex;
     justify-content: end;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.cake-usd span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #808080;
+    text-transform: capitalize;
+}
+.cake-select {
+    margin: 0 12px;
+    display: flex;
+}
+span.slider {
+    background-color: #F8C400;
+}
+.apy-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.cake-field {
+    width: 100%;
+}
+.apy-select .title {
+    margin: 0;
+}
+.cake-field input {
+    background-color: #F9FAFB;
+    width: -webkit-fill-available;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ECECEC;
+    text-align: right;
+    padding: 0 15px;
+}
+.cake-field input::placeholder {
+    color: #070602;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.balance {
+    margin-top: 6px;
+}
+.apy-select .switch {
+    width: 40px;
+    height: 25px;
+}
+
+.apy-select .switch .slider:before {
+    height: 20px;
+    width: 20px;
+}
+
+.apy-select input:checked + .slider:before {
+    transform: translateX(16px);
+}
+.apy-select span.slider {
+    background-color: #EAEAEA;
+}
+.apy-select input:checked + .slider {
+    background-color: #F8C400;
 }
 
 /* Add this CSS to your component's CSS file or a global CSS file */
@@ -40,13 +117,134 @@
     width: 25px;
     height: 15px;
 }
-  
+.balance button:first-child {
+    background: #FFF9AA;
+}
+.balance button {
+    background: #F8F8F8;
+    border: 0;
+    color: #000;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    margin-right: 6px;
+	transition:0.4s;
+}
+.quantity span {
+    font-size: 12px;
+    color: #A8A8A8;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
+  .title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    text-align: initial;
+}
+.day button.active {
+    background: #FCEB74;
+    box-shadow: 0 0px 1px 0 #00000025;
+    border: 1px solid #FED700;
+    color: #081E3F;
+}
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cake-title span{
+    margin-left: 4px;
+}
+.tier span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #A3A3A3;
+    margin-bottom: 10px;
+    display: flex;
+}
+.cake-field input:focus-visible {
+    outline: none;
+}
+.quantity {
+    text-align: right;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.roi {
+    text-align: right;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #A3A3A3;
+}
+.day button:hover {
+    background: #FCEB74;
+    box-shadow: 0 0px 1px 0 #00000025;
+    border: 1px solid #FED700;
+    color: #081E3F;
+}
+.balance button:hover {
+    background: #FCEB74;
+    box-shadow: 0 0px 1px 0 #00000025;
+    color: #081E3F;
+}
+.day button {
+    background: #F9FAFB;
+    color: #A2A2A2;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 1px solid #F9FAFB;
+    padding: 10px 25px;
+    font-family: 'Poppins', sans-serif;
+	transform:0.4s;
+}
+.submit-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns {
+    width: 48%;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.btns.color {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.btns.trans {
+    border: 1px solid #666;
+    background: transparent;
+}
+
+.btns.trans:hover {
+    background: #666;
+    color: #fff;
+}
+
+.btns.color:hover {
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
   .slider {
     position: absolute;
     cursor: pointer;
@@ -58,7 +256,18 @@
     transition: 0.4s;
     border-radius: 40px;
 }
-  
+  .balance sup {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #A8A8A8;
+    font-weight: 600;
+}
+
+.balance {
+    position: relative;
+    display: flex;
+}
   .slider:before {
     position: absolute;
     content: "";
@@ -80,6 +289,6 @@
   }
   
   input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(10px);
   }
   
